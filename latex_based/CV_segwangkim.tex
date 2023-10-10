@@ -1,0 +1,355 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Curriculum Vitae Template Latex Code                  %
+%                                                                                %
+%                              Author: Manuel Pasqual Paul                       %
+%                      Email: paul.manuel.pasqual@gmail.com                      %
+%                                                                                %
+%                             Last Edited: January 2020                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Specifications %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{datetime}
+\usepackage{kotex}
+\usepackage{times}
+\usepackage[dvipsnames]{xcolor}
+
+\newdateformat{monthdayyeardate}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+  
+% \definecolor{mycolor}{HTML}{F7F8E0}
+\definecolor{mycolor}{RGB}{0,123,255}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=mycolor,
+    filecolor=black,      
+}
+\urlstyle{sf}
+
+% \usepackage{xcolor}
+% \usepackage[colorlinks = true,
+%             linkcolor = blue,
+%             urlcolor  = mycolor!75!black,
+%             citecolor = blue,
+%             anchorcolor = blue]{hyperref}
+% \newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Name & Contact Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\Large \bfseries SEGWANG KIM} \\ 
+\end{center}
+
+	\noindent Samsung MX Division\\
+	\begin{small}
+	E-mail: ksk5693@snu.ac.kr, Homepage: \url{https://segwangkim.github.io}, Github: \href{https://github.com/SegwangKim}{SegwangKim}
+	\end{small}
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center} % Begin Text Centering
+	{\noindent \bfseries EDUCATION}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center} % End Text Centering
+
+\vspace{8pt} % Gap between title and text
+
+\noindent
+{\sl \bfseries Doctor of Philosophy} \hfill Mar 2016 - Fall 2022\\ 
+\noindent Department of Electrical and Computer Engineering \hfill Seoul, Korea\\ 
+\noindent Seoul National University \\
+\noindent Advisor: \href{http://milab.snu.ac.kr/kjung/}{\textit{Kyomin Jung}} \\ 
+
+\noindent
+{\sl \bfseries Bachelor of Science (Cum Laude)} \hfill Mar 2012 - Feb 2016 \\ 
+\noindent College of Liberal Studies (Major: Mathematics, Minor: Statistics) \hfill Seoul, Korea\\
+\noindent Seoul National University \\
+	
+\noindent
+{\sl \bfseries Korea Science Academy of KAIST} \hfill Mar 2009 - Feb 2012 \\ 
+\noindent High School for Gifted Students (\href{https://www.ksa.hs.kr/Eng}{KAIST 부설 한국과학영재학교})\hfill Busan, Korea\\
+ 
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESEARCH INTERNSHIPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries RESEARCH INTERNSHIPS}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center} 
+
+\vspace{8pt} % Gap between title and text
+
+\noindent
+{\bfseries Undergraduate Internship} \hfill Summer 2014 \\ 
+Driven Cavity Problem with 5th WENO \\ 
+The fluid dynamics in a 2d-rectangle with obstacles can be described as Navier-stokes equations.
+To obtain a numerical solution of the non-linear PDEs, I did a C++ implementation of 5th WENO methods using sparse matrices.
+Refer to MATLAB simulations of computed solutions (\href{https://segwangkim.github.io/notes/fluid1.gif}{demo1}, \href{https://segwangkim.github.io/notes/fluid2.gif}{demo2}).\\
+\noindent \href{http://ncia.snu.ac.kr/xe/}{Numerical Computing and Image Analysis Lab}, Dept. of Mathematical Science, SNU\\ 
+Advisor: \textit{Meongju Kang}, Mentor: \textit{Seongju Do}
+% \vspace{6pt}
+% \begin{itemize} \itemsep -2pt % Reduce space between items
+% 	\item BULLET POINT 1
+% 	\item BULLET POINT 2
+% \end{itemize}
+
+
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries HONORS AND AWARDS}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\noindent
+{\bfseries \href{https://aiis.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=144&page=4&lan=}{SNU AIIS Spring Retreat Best Poster Award} (3rd place)} \hfill April 2021 \\ 
+\noindent Neural Sequence-to-grid Module for Learning Symbolic Rules (AAAI 2021) \\ 
+
+\vspace{0.2in} % Some whitespace between sections
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESEARCH INTEREST %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries RESEARCH INTEREST}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\vspace{8pt} % Gap between title and text
+\setlength{\parindent}{0.5in}
+
+\noindent 
+My main interest lies in Natural Language Processing (NLP), particularly in compositional generalization abilities of deep learning sequence-to-sequence models.
+\begin{itemize}
+    \item Exploring the expressivity of deep learning models: Prior to attacking tasks using a deep learning model, one needs to check that the expressivity of the model is enough.
+    Inspired by number sequence prediction problems for testing human intelligence, we measured the computational powers of deep learning models using the problems and corresponding Automata \textbf{(published in AAAI 2019)}.  
+    \item Proposing models that learn inductive bias:
+    A possible deep learning method for learning a task is to design a new architecture specialized for the task. 
+    Motivated by an inductive bias necessary for learning arithmetic operations, I suggested a neural sequence-to-grid module that can automatically align an input sequence into a grid \textbf{(published in AAAI 2021)}.
+    The module successfuly enhanced a neural network like CNN to generalize on out-of-distribution examples of number sequence prediction problems or computer program evaluation problems.
+    \item Designing effective fintuning methods for the standard NLP models: Pretrained language models (PLMs) that leverage the vast volume of natural language corpus are becoming universal tools to attack all NLP tasks. Hence, it is desirable to suggest effective finetuning methods for PLM rather than designing specialized architectures only applicable to specific domains.
+    In compositional generalization tasks, I suggested a parsing tree annotation techniques that significantly enhance PLMs' accuracy \textbf{(published in IEEE ACCESS 2021)}.  
+\end{itemize}
+Other than that, I am also interested in techniques to compress large models for edge computing.\\
+
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PUBLICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries PUBLICATIONS}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\vspace{8pt} % Gap between title and text
+% {\bfseries Conference Proceedings} 
+\begin{itemize}
+\item Dongryeol Lee*, \textbf{Segwang Kim}*, Minwoo Lee, Hwanhee Lee, Joonsuk Park, Sang-Woo Lee, Kyomin Jung, \href{-}{Asking Clarification Questions to Handle Ambiguity in Open-Domain QA}, Empirical Methods in Natural Language Processing (EMNLP) Findings - Dec 2023, Singapore
+\item Kangil Lee, \textbf{Segwang Kim}, Kyomin Jung, \href{-}{Weakly Supervised Semantic Parsing with Execution-based Spurious Program Filtering}, Empirical Methods in Natural Language Processing (EMNLP) - Dec 2023, Singapore
+\item \textbf{Segwang Kim}, Joonyoung Kim, and Kyomin Jung, \href{https://ieeexplore.ieee.org/document/9340248}{Compositional Generalization via Parsing Tree Annotation}, IEEE ACCESS 2021 [\href{https://github.com/SegwangKim/annotation-of-targets-using-parsing-trees}{code}]
+\item \textbf{Segwang Kim}, Hyoungwook Nam, Joonyoung Kim, and Kyomin Jung, 
+\href{https://ojs.aaai.org/index.php/AAAI/article/view/16994}{Neural Sequence-to-grid Module for Learning Symbolic Rules}, AAAI Conference on Artificial Intelligence (AAAI) - 2021, A Virtual Conference
+[\href{https://github.com/SegwangKim/neural-seq2grid-module}{code}, \href{https://segwangkim.github.io/pdfs/poster_AAAI21.pdf}{poster}, \href{https://www.slideshare.net/segwangkim/seq2grid-aaai-2021}{slides}]
+\item Hyoungwook Nam, \textbf{Segwang Kim}, Kyomin Jung, \href{https://ojs.aaai.org//index.php/AAAI/article/view/4387}{Number Sequence Prediction Problems for Evaluating Computational Powers of Neural Networks}, AAAI Conference on Artificial Intelligence (AAAI, Oral), Jan 2019, Honolulu, Hawaii, USA
+[\href{https://segwangkim.github.io/pdfs/poster_AAAI19.pdf}{poster}, \href{https://segwangkim.github.io/pdfs/slides_AAAI19.pdf}{slides}]
+% \end{itemize}
+
+% \vspace{6pt}
+
+% {\bfseries Journals} 
+% \begin{itemize}
+\end{itemize}
+
+\vspace{0.2in} % Some whitespace between sections
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROFESSIONAL EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{center}
+% 	{\noindent \bfseries PROFESSIONAL EXPERIENCE}
+% \end{center} 
+
+% \vspace{8pt} % Gap between title and text
+
+% \noindent
+% {\bfseries [YOUR POSITION]} \hfill [MONTH YEAR] \\ 
+% \noindent [PROGRAM, DEPT, UNIVERSITY, COMPANY] \hfill [CITY STATE] \\ 
+% \noindent Supervisor: [SUPERVISOR NAME]
+
+% \vspace{6pt}
+% \begin{itemize} \itemsep -2pt % Reduce space between items
+% 	\item BULLET POINT 1
+% 	\item BULLET POINT 2
+% \end{itemize}
+
+% \vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%% VOLUNTEER EXPERIENCE & CAUSES %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{center}
+% 	{\noindent \bfseries VOLUNTEER EXPERIENCE \& CAUSES}
+% \end{center}
+
+% \vspace{8pt} % Gap between title and text
+
+% \noindent
+% {\bfseries [YOUR POSITION]} \hfill [MONTH YEAR] \\ 
+% \noindent [PROGRAM, DEPT, UNIVERSITY, COMPANY] \hfill [CITY STATE] \\ 
+% \noindent Supervisor: [SUPERVISOR NAME]
+
+% \vspace{6pt}
+% \begin{itemize} \itemsep -2pt % Reduce space between items
+% 	\item BULLET POINT 1
+% 	\item BULLET POINT 2
+% \end{itemize}
+
+% \vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% SCHOLARSHIPS & MENTORSHIPS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{center}
+% 	{\noindent \bfseries Honors and Awards}
+% \end{center}
+
+% \vspace{8pt} % Gap between title and text
+
+% \noindent
+% {\bfseries [PROGRAM]} \hfill [MONTH YEAR] \\ 
+% \noindent [DEPT, UNIVERSITY, COMPANY] \hfill [CITY STATE] \\ 
+% \noindent Supervisor: [SUPERVISOR NAME]
+
+% \vspace{6pt}
+% \begin{itemize} \itemsep -2pt % Reduce space between items
+% 	\item BULLET POINT 1
+% 	\item BULLET POINT 2
+% \end{itemize}
+
+% \vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROJECTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries PROJECTS}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\noindent
+{\bfseries Improving Reliability of Large-scale Language Models} \hfill 2021 - \\ 
+\noindent 
+NAVER \\
+Co-working with NAVER's language research team, I am developing reliable open domain QA systems for ambiguous user queries.
+\\ 
+
+\noindent
+{\bfseries Developing Deep Learning Architecture for Logical Inference} \hfill 2019 - 2021\\ 
+\noindent 
+Samsung Research Funding \& Incubation Center for Future Technology \\
+I led this research project to design novel architectures and learning methods to make deep learning models have logical inference abilities.
+\\ 
+
+\noindent
+{\bfseries Developing Automatic Temperature System} \hfill 2018 - 2019 \\ 
+% 본 과제의 목적은 네이버 블로그에서 흔히 발생하는 악성 루머를 탐지하는 모델을 만드는 연구를 목표로 한다. 구체적으로는 악성 루머가 가지는 고유의 특성과 전파 특성을 고려하여 분류방법을 제안하고, 이를 바탕으로 실제 블로그 데이터에 적용하는 것을 목표로 한다.
+\noindent 
+Dasan DNG\\
+I led this project to implement a smart thermostat system that can automatically control and suggest optimal temperatures.
+Proceeding with this project, I not only coordinated with workers from Dasan DNG but also cleansed raw data obtained from status sensors and Korea Meteorological Administration DB.\\
+
+\noindent
+{\bfseries Rumor Detection on NAVER Blog Spaces} \hfill 2017 - 2018 \\ 
+% 본 과제의 목적은 네이버 블로그에서 흔히 발생하는 악성 루머를 탐지하는 모델을 만드는 연구를 목표로 한다. 구체적으로는 악성 루머가 가지는 고유의 특성과 전파 특성을 고려하여 분류방법을 제안하고, 이를 바탕으로 실제 블로그 데이터에 적용하는 것을 목표로 한다.
+\noindent 
+NAVER\\
+This research project was aimed to propose machine learning methods to debunk malicious rumors on social media like NAVER blogs. 
+To do so, I suggested an accurate XGBoost-based tree boosting method that can explain which word combinations in a post affect the post being classified as a rumor.\\
+
+\noindent
+{\bfseries Improving Japaneses-Korean Neural Machine Translation Models} \hfill 2016 - 2017 \\ 
+%본 과제의 목적은 일본어-영어 간의 신경망 기반 기계 번역 (Neural Machine Translation, NMT) 모델의 번역 정확도를 상용화 가능한 수준까지 향상시키는 것을 목표로 한다. 구체적으로는 Attention model의 개선을 통해 단어-간의 번역 정확도를 향상시키며, 사전 거대화 및 unknown token replacement 기법의 개선을 통해 불완전한 번역문의 생성을 최소화시키는 것이다.
+\noindent 
+NAVER \\ 
+This research project was aimed to improve RNN sequence-to-sequence neural machine translation models in terms of their accuracy and vocabulary coverage.
+In particular, to cover more out-of-vocabulary words, I implemented the LightRNN method that represents a single word as two subwords, enabling the model to cover $N^2$ words with $2N$ subwords.
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Invited TALK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries INVITED TALK}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\noindent
+{\bfseries NAVER AI Colloquium} \hfill Mar 2018 \\ 
+\noindent Rumor Detection on Social Media \\ 
+
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEACHING EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries PROGRAMMING SKILLS}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+\noindent
+Python, PyTorch, TensorFlow, C++, MATLAB. 
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEACHING EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries TEACHING EXPERIENCE}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\noindent
+{\bfseries Teaching Assistant} \hfill Mar 2016 -  \\ 
+\noindent Department of Electric and Computer Engineering \hfill Seoul National University \\ 
+\noindent Lecturer: \textit{Kyomin Jung}
+\vspace{6pt}
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item (Graduate Class) Machine Learning \hfill Fall 2021
+	\item (Undergraduate Class) Programming Methodologies \hfill Spring 2020
+	\item (Undergraduate Class) Programming Methodologies \hfill Spring 2019
+	\item (Graduate Class) Advanced Programming Methodologies \hfill Fall 2018
+	\item (Graduate Class) Advanced Programming Methodologies \hfill Fall 2017
+	\item (Graduate Class) Advanced Programming Methodologies \hfill Spring 2016
+\end{itemize}
+
+
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Extra Curricular Activity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\noindent \bfseries EXTRACURRICULAR ACTIVITIES}
+    \noindent\makebox[\linewidth]{\rule{0.75\paperwidth}{0.4pt}}
+\end{center}
+
+\noindent
+{\bfseries Sports} \\ 
+\noindent Soccer \hfill Spring 2012 -
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item 1st place, SNU President's Cup Soccer Tournament \hfill Spring 2015
+	\item 1st place, SNU President's Cup Soccer Tournament \hfill Spring 2013
+\end{itemize}
+\noindent Swimming \hfill Summer 2016 - \\ 
+\noindent Tennis (active) \hfill Summer 2017 - \\
+
+\vspace{0.2in} % Some whitespace between sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Last Updated: \monthdayyeardate\today
+\end{document}
